@@ -1239,6 +1239,10 @@ input.gethint
    background-image: url([[pix:theme|hint]]);
 }
 
+input.gethint.disabled
+{
+   background-image: url([[pix:theme|nohint]]);
+}
 
 fieldset.fgroup
 {
@@ -1251,6 +1255,11 @@ input.savenow:hover,
 input.gethint:hover
 {
     background-color: #FFFEE0;
+}
+
+input.gethint.disabled:hover
+{
+    background-color:#F5F5F5;
 }
 
 
