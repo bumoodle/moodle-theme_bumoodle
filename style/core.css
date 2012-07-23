@@ -1205,7 +1205,9 @@ div.feedback
 
 }
 
-input.gradenow
+input.gradenow,
+input.savenow,
+input.gethint
 {
    padding: 4px 4px 4px 27px; 
    margin-right: 5px;
@@ -1214,35 +1216,28 @@ input.gradenow
    border-style:dotted;
    border-color:#CCCCCC;
    border-width:1px; 
-
-   background-image: url([[pix:theme|gradenow]]);
    background-repeat: no-repeat;
    background-position: 6px 4px;
 
    font-size: 9pt;
 
    cursor: pointer;
+}
+
+input.gradenow
+{
+   background-image: url([[pix:theme|gradenow]]);
 }
 
 input.savenow
 {
-   padding: 4px 4px 4px 27px;
-   background-color:#F5F5F5;
-   border-style:dotted;
-   border-color:#CCCCCC;
-   border-width:1px; 
-   margin-top: 10px;
-
    background-image: url([[pix:theme|savenow]]);
-   background-repeat: no-repeat;
-   background-position: 6px 4px;
-
-   font-size: 9pt;
-
-   cursor: pointer;
 }
 
-
+input.gethint
+{
+   background-image: url([[pix:theme|hint]]);
+}
 
 
 fieldset.fgroup
@@ -1251,15 +1246,13 @@ fieldset.fgroup
     border: none !important;
 }
 
-input.gradenow:hover
+input.gradenow:hover,
+input.savenow:hover,
+input.gethint:hover
 {
     background-color: #FFFEE0;
 }
 
-input.savenow:hover
-{
-    background-color: #FFFEE0;
-}
 
 
 div.qsummary
@@ -1285,4 +1278,29 @@ span.unread
     font-weight: bold;
     font-size: 10pt;    
     margin-left: 3px !important;
+}
+
+
+div.hinttext
+{
+    margin-top: 2px;
+    padding: 5px;
+    border: 1px dotted #000;
+    background-color: #F8F8F8;
+
+    font-size: 14px;
+}
+
+div.hint h3
+{
+    text-transform: uppercase;
+    font-size: 10px;
+    margin: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+div.hint
+{
+    margin-top: 10px;
 }
