@@ -1248,15 +1248,18 @@ input.gethint.disabled
 
 span.vmod_slow
 {
-   background-image: url([[pix:theme|slower]]);
+   background-image: url([[pix:theme|slower]]) !important;
 }
 
-span.vmod_
+span.vmod
 {
     background-image: url([[pix:theme|slow]]);
 }
 
-
+div.videomodifiers
+{
+    text-align: center;
+}
 
 
 fieldset.fgroup
@@ -1271,6 +1274,11 @@ input.gethint:hover
 span.vmod:hover,
 {
     background-color: #FFFEE0;
+}
+
+span.vmod.active
+{
+    background-color #FFFDD0 !important;
 }
 
 input.gethint.disabled:hover,
