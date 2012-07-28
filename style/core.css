@@ -1246,15 +1246,11 @@ input.gethint.disabled
    background-image: url([[pix:theme|nohint]]);
 }
 
-span.vmod_slow
-{
-   background-image: url([[pix:theme|slower]]) !important;
-}
-
-span.vmod
-{
-    background-image: url([[pix:theme|slow]]);
-}
+span.vmod_veryslow { background-image: url([[pix:theme|veryslow]]) !important; }
+span.vmod_slow { background-image: url([[pix:theme|slow]]) !important; }
+span.vmod { background-image: url([[pix:theme|timing]]); }
+span.vmod_fast { background-image: url([[pix:theme|veryfast]]) !important; }
+span.vmod_veryfast { background-image: url([[pix:theme|veryfast]]) !important; }
 
 div.videomodifiers
 {
