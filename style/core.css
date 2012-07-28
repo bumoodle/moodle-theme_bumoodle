@@ -1207,7 +1207,8 @@ div.feedback
 
 input.gradenow,
 input.savenow,
-input.gethint
+input.gethint,
+span.vmod
 {
    padding: 4px 4px 4px 27px; 
    margin-right: 5px;
@@ -1253,11 +1254,13 @@ fieldset.fgroup
 input.gradenow:hover,
 input.savenow:hover,
 input.gethint:hover
+span.vmod:hover,
 {
     background-color: #FFFEE0;
 }
 
-input.gethint.disabled:hover
+input.gethint.disabled:hover,
+span.vmod.active:hover,
 {
     background-color:#F5F5F5;
 }
