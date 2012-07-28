@@ -1240,10 +1240,24 @@ input.gethint
    background-image: url([[pix:theme|hint]]);
 }
 
+
 input.gethint.disabled
 {
    background-image: url([[pix:theme|nohint]]);
 }
+
+span.vmod_slow
+{
+   background-image: url([[pix:theme|slower]]);
+}
+
+span.vmod_
+{
+    background-image: url([[pix:theme|slow]]);
+}
+
+
+
 
 fieldset.fgroup
 {
