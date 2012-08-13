@@ -4,7 +4,7 @@ Moodle@BU Theme for Binghamton University
 Authored by Kyle Temkin, working for Binghamton University <http://www.binghamton.edu>,
 using a variety of IP assets owned by Binghamton University
 
-*** The images contained in this theme are intellectually owned by Binghamton University, and contain registered trademarks. They are _not_ released under the GPL.***
+*The images contained in this theme are intellectually owned by Binghamton University, and contain registered trademarks. They are _not_ released under the GPL.*
 
 
 Installation
