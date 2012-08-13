@@ -1,0 +1,45 @@
+span.vmod_veryslow { background-image: url([[pix:theme|veryslow]]) !important; }
+span.vmod_slow { background-image: url([[pix:theme|slow]]) !important; }
+span.vmod { background-image: url([[pix:theme|timing]]); }
+span.vmod_fast { background-image: url([[pix:theme|fast]]) !important; }
+span.vmod_veryfast { background-image: url([[pix:theme|veryfast]]) !important; }
+
+div.videomodifiers
+{
+    text-align: center;
+}
+
+span.vmod.active
+{
+    background-color #FFFDD0 !important;
+}
+
+span.vmod:hover,
+{
+    background-color: #FFFEE0;
+}
+
+span.vmod.active:hover
+{
+    background-color:#F5F5F5;
+}
+
+span.vmod
+{
+   padding: 4px 4px 4px 27px; 
+   margin-right: 5px;
+   margin-top: 10px;
+   background-color:#F5F5F5;
+   border-style:dotted;
+   border-color:#CCCCCC;
+   border-width:1px; 
+   background-repeat: no-repeat;
+   background-position: 6px 4px;
+
+   font-size: 9pt;
+
+   cursor: pointer;
+}
+
+
+

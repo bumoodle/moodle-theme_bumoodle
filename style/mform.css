@@ -1,0 +1,26 @@
+
+.mform,
+.mform select
+{
+      font-size: 14px !important;
+      color: #333;
+      font-family: "Droid Sans";
+      font-weight: normal !important;
+}
+
+.ftoggler
+{
+      font-family: "Droid Sans";
+      font-weight: normal !important;
+}
+
+.ftoggler img
+{
+      margin-left: 10px !important;
+}
+
+#helppopupbox .yui3-overlay-content.yui3-widget-stdmod
+{
+     background-color: #f3f3f3 !important; 
+}
+
