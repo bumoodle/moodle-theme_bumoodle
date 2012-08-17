@@ -20,7 +20,7 @@ $THEME->parents = array('base','canvas');
 // changes you want to your theme.
 ////////////////////////////////////////////////////
 
-$THEME->sheets = array('core', 'gradebook', 'behaviour', 'adminautohide', 'videomods', 'mform');
+$THEME->sheets = array('core', 'gradebook', 'behaviour', 'adminautohide', 'videomods', 'mform', 'courseformat');
 
 ////////////////////////////////////////////////////
 // Name of the stylesheet(s) you've including in
@@ -205,7 +205,9 @@ $THEME->layouts = array(
 ////////////////////////////////////////////////////
 
 // $THEME->renderfactory
-//$THEME->rendererfactory = 'theme_simplespace_renderer_factory';
+$THEME->rendererfactory = 'theme_overridden_renderer_factory';
+
+
 ////////////////////////////////////////////////////
 // Sets a custom render factory to use with the
 // theme, used when working with custom renderers.

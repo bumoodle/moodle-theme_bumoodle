@@ -9,7 +9,9 @@ doctype is served. Use Filter: none on clear to protect PNG alphas.
 
 Tweak the top opacity values to get "ghost" icons rather than hiding them**/
 .block .header .commands a img,
+.block .header .commands span img,
 .path-course-view .section .content li .commands a img,
+.path-course-view .section .content li .commands span img,
 .path-course-view .section .content .summary a img.icon.edit{
 	opacity: 0.01;	
 	filter: alpha(opacity=1);
@@ -20,6 +22,9 @@ Tweak the top opacity values to get "ghost" icons rather than hiding them**/
 }
 
 .path-course-view .section .left.side a img,
+.path-course-view .section .left.side span img,
+.path-course-view .section .right.side a img,
+.path-course-view .section .right.side span img,
 .path-course-view .section .right.side div img
 {
     opacity: 0.01; 
@@ -30,20 +35,31 @@ Tweak the top opacity values to get "ghost" icons rather than hiding them**/
 .path-course-view .section:hover .left.side img,
 .path-course-view .section .right.side a:focus img,
 .path-course-view .section .left.side a:focus img,
+.path-course-view .section .right.side span:focus img,
+.path-course-view .section .left.side span:focus img,
 .ie.path-course-view .section .right.side a:active img,
 .ie.path-course-view .section .left.side a:active img
 {
     opacity:1;
     filter: none;
+	-o-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	-webkit-transition: opacity 0.3s;
 }
+
 .block:hover .header .commands a img,
 .block .header .commands a:focus img,
 .ie .block .header .commands a:active img,
 .path-course-view .section .content li:hover .commands a img,
+.path-course-view .section .content li:hover .commands span img,
 .path-course-view .section .content li .commands a:focus img,
+.path-course-view .section .content li .commands span:focus img,
 .ie.path-course-view .section .content li .commands a:active img,
 .path-course-view .section:hover .content .summary a img.icon.edit,
+.path-course-view .section:hover .content .summary div img.icon.edit,
+.path-course-view .section:hover .content .summary span img.icon.edit,
 .path-course-view .section .content .summary a:focus img.icon.edit,
+.path-course-view .section .content .summary span:focus img.icon.edit,
 .ie.path-course-view .section .content .summary a:active img.icon.edit{
 	opacity:1;
 	filter: none;
@@ -61,7 +77,7 @@ Tweak the top opacity values to get "ghost" icons rather than hiding them**/
 	-moz-transition: opacity 0.2s linear 0.1s;
 	-webkit-transition: opacity 0.2s linear 0.1s;
 	transition: opacity 0.2s linear 0.1s;
-    float: right;
+    /* float: right; */
 }
 
 
