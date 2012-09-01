@@ -1,0 +1,125 @@
+
+.path-login .twocolumns div.loginpanel {
+    width: 420px !important;
+    float: right !important;
+    margin-left: 20px;
+    clear: none;
+}
+
+.path-login .twocolumns div.signuppanel {
+    margin-top: 10px;
+    float: none !important;
+    width: auto !important;
+}
+
+
+.path-login .twocolumns div.signuppanel h2 {
+    font-size: 18px;
+    text-align: left;
+    border: none;
+}
+
+.path-login .twocolumns div.loginpanel h2 {
+    margin-bottom: 0;
+}
+
+
+
+.path-login .loginpanel * {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+
+.path-login .loginbox .loginform {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 350px !important;
+}
+
+
+.path-login .subcontent.loginsub {
+    background-color: #F3F3F3;
+    border: 1px solid #E5E5E5;
+    border-top: 0px;
+    margin-top: 0;
+}
+
+.path-login .loginbox .loginform div.form-label {
+    float: left;
+    clear: left;
+    width: 100% !important;
+}
+
+body.path-login div.loginbox div.loginform div.form-input {
+   float: left;
+   clear: left;
+   width: 100% !important;
+}
+
+.path-login .loginbox .loginform div.form-label {
+    text-align: left;
+} 
+
+
+.path-login .loginbox .loginform .form-input input {
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+.path-login .loginbox .loginform .form-input input#username,
+.path-login .loginbox .loginform .form-input input#password
+{
+   height: 32px;
+   font-size: 15px;
+   direction: ltr;
+   width: 100%;
+   padding: 0 8px;
+   border: 1px solid #D9D9D9;
+   border-top: 1px solid silver;
+   -webkit-border-radius: 1px;
+   -moz-border-radius: 1px;
+   border-radius: 1px;
+}
+
+.path-login .loginbox .loginpanel div.desc {
+    display: none;
+}
+
+.path-login .loginbox .loginform .form-input input#username:hover,
+.path-login .loginbox .loginform .form-input input#password:hover
+{
+   border: 1px solid #B9B9B9;
+   border-top: 1px solid #A0A0A0;
+}
+ 
+.path-login .loginbox .loginform .form-input input#username:focus,
+.path-login .loginbox .loginform .form-input input#password:focus
+{
+   border: 1px solid #5ab65c;
+   border-top: 1px solid #62c663;
+   outline: none;
+}
+ 
+.path-login .loginbox .loginform .form-input input#loginbtn {
+    height: 34px;
+}
+
+.path-login .loginbox #rememberusername {
+    margin-right: 2px;
+}
+
+.path-login .loginbox .loginpanel div.rememberpass, 
+.path-login .loginbox .loginpanel div.forgetpass a {
+    float: right;
+    margin-right: 25px;
+    font-size: small;
+}
+
+.path-login .loginbox .loginpanel div.forgetpass a {
+    margin-top : -30px; /* FIXME */
+}
+.path-login .loginbox .loginpanel div.rememberpass {
+    margin-top : -44px; /* FIXME */
+}

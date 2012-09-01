@@ -20,7 +20,7 @@ $THEME->parents = array('base','canvas');
 // changes you want to your theme.
 ////////////////////////////////////////////////////
 
-$THEME->sheets = array('core', 'gradebook', 'behaviour', 'adminautohide', 'videomods', 'mform', 'courseformat');
+$THEME->sheets = array('core', 'gradebook', 'behaviour', 'adminautohide', 'videomods', 'mform', 'courseformat', 'login');
 
 ////////////////////////////////////////////////////
 // Name of the stylesheet(s) you've including in

@@ -51,8 +51,8 @@ class theme_bumoodle_core_question_renderer extends core_question_renderer
 
         // Collect the parameters needed to identify the question in the Ask Instructor field.
         $parameters = array(
-            'type' => 'askinstructor',
-            'id' => $qa->get_database_id(),
+            'type' => 'askquizquestion',
+            'typeid' => $qa->get_database_id(),
             'number' => $number
         );
 
