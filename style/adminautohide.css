@@ -10,6 +10,7 @@ doctype is served. Use Filter: none on clear to protect PNG alphas.
 Tweak the top opacity values to get "ghost" icons rather than hiding them**/
 .block .header .commands a img,
 .block .header .commands span img,
+.path-course-view .section .content li .module_selector_checkbox,
 .path-course-view .section .content li .commands a img,
 .path-course-view .section .content li .commands span img,
 .path-course-view .section .content .summary a img.icon.edit{
@@ -51,6 +52,8 @@ Tweak the top opacity values to get "ghost" icons rather than hiding them**/
 .block .header .commands a:focus img,
 .ie .block .header .commands a:active img,
 .path-course-view .section .content li:hover .commands a img,
+.path-course-view .section .content li:hover .module_selector_checkbox,
+.path-course-view .section .content li .module_selector_checkbox:checked,
 .path-course-view .section .content li:hover .commands span img,
 .path-course-view .section .content li .commands a:focus img,
 .path-course-view .section .content li .commands span:focus img,
