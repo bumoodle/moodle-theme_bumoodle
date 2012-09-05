@@ -123,3 +123,11 @@ body.path-login div.loginbox div.loginform div.form-input {
 .path-login .loginbox .loginpanel div.rememberpass {
     margin-top : -44px; /* FIXME */
 }
+
+.path-login .loginerrors {
+    margin: 5px;
+    padding: 5px;
+    color: #D00;
+    text-align: left;
+    margin-left: 18px;
+}
