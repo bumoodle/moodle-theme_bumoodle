@@ -30,13 +30,34 @@ class theme_bumoodle_core_question_renderer extends core_question_renderer
      * @return HTML fragment.
      */
     protected function info(question_attempt $qa, qbehaviour_renderer $behaviouroutput, qtype_renderer $qtoutput, question_display_options $options, $number) {
-        $output = '';
-        $output .= $this->number($number);
+        $output = $this->number($number);
         $output .= $this->status($qa, $behaviouroutput, $options);
         $output .= $this->mark_summary($qa, $options);
+        $output .= $this->grade_method_summary($qa, $behaviouroutput, $options);
         $output .= $this->question_flag($qa, $options->flags);
         $output .= $this->ask_instructor_link($qa, $number);
         $output .= $this->edit_question_link($qa, $options);
+        return $output;
+    }
+
+    protected function grade_method_summary(question_attempt $qa, qbehaviour_renderer $behaviouroutput, $options) {
+        
+        // If the behaviour does not have a "grade method details" function, then return an empty string.
+        // Normally, it would be better to add a trivial grade_method_details to the qbehaviour rendererbase,
+        // but this method allows us to avoid a core-mod for our functionality. 
+        //
+        // If this method proves to be useful in more than just this case, it might be worth adding to core-
+        // but that's an issue for another time.
+        if(!method_exists($behaviouroutput, 'grade_method_details')) {
+            return '';
+        }
+        
+        // Create a grade-method summary div.
+        $output = html_writer::start_tag('div', array('class' => 'grademethodsummary'));
+        $output .= $behaviouroutput->grade_method_details($qa, $options); 
+        $output .= html_writer::end_tag('div');
+
+        // ... and return it.
         return $output;
     }
 
