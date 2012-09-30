@@ -1045,11 +1045,44 @@ div.redirectmessage {
     padding: 20px;
 }
 
+div.prettyerrorheader {
+    border-bottom: 4px solid #006a4e;
+
+    width: 100%;
+    height: 71px;
+    background: #73b056 url([[pix:theme|errormessage]]) no-repeat bottom left;
+}
+
 div.box.errorbox {
-    border: 1px solid #dadada;
-    color: #ff0000;
-    background: #fff url([[pix:theme|error]]) no-repeat 1% 3%;
-    padding: 10px;
+
+    font-family: arial, sans-serif;
+
+    border-top: 0px solid #000;
+
+    margin: 0px;
+    padding: 20px;
+    /* padding-right: 200px; */
+
+    min-height: 260px;
+
+    background: #fffcdf url([[pix:theme|errorboxbg]]) no-repeat bottom right;
+
+    /*
+     * color: #ff0000;
+     */
+    color: #444;
+    text-align: left;
+
+}
+
+div.box.errorbox .errorsuffix {
+    color: #000;
+}
+
+div#errorscreen {
+
+    margin: -20px -10px;
+
 }
 
 div#newmessageoverlay {
