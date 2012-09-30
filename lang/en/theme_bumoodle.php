@@ -13,3 +13,7 @@ $string['linkcolordesc'] = 'Set the color of links in the theme, use html hex co
 
 $string['maincolor'] = 'maincolor';
 $string['maincolordesc'] = 'Set the color hex code of the header, dock bar and other areas. Looks best as a dark or saturated color.';
+
+
+$string['errorsuffix'] = '<strong>That\'s an error message,</strong> but don\'t panic- we\'re on it!<br /> We\'ve already taken a record of what happens, so the administrators (and your instructor) can look in to what\'s going on.';
+$string['errorreference'] = 'If you contact support (or your instructor), include this number: <br /><small><strong>Record number:<strong> <code>{$a}</code></small>';
