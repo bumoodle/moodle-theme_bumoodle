@@ -1147,11 +1147,13 @@ div.singlebutton.forumaddnew {
         margin-top: 10px;
 }
 
-.correct
+.correct,
+.correct .cell
 {
     background-color: #AFF59B !important;
 }
 
+.incorrect .cell,
 .incorrect
 {
     background-color: #FFBCB7 !important;
