@@ -1184,12 +1184,10 @@ div.singlebutton.forumaddnew {
 }
 
 .correct,
-.correct .cell
 {
     background-color: #AFF59B !important;
 }
 
-.incorrect .cell,
 .incorrect
 {
     background-color: #FFBCB7 !important;
@@ -1272,3 +1270,6 @@ span.unread
     margin-left: 3px !important;
 }
 
+div.filemanager-container {
+  clear: none !important;
+}
