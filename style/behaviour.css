@@ -38,6 +38,11 @@ input.gethint
    background-image: url([[pix:theme|hint]]);
 }
 
+input.reloadnow
+{
+   background-image: url([[pix:theme|refresh]]);
+}
+
 
 input.gethint.disabled
 {
@@ -46,7 +51,8 @@ input.gethint.disabled
 
 input.gradenow:hover,
 input.savenow:hover,
-input.gethint:hover
+input.gethint:hover,
+input.reloadnow:hover
 {
     background-color: #FFFEE0;
 }
@@ -58,7 +64,8 @@ input.gethint.disabled:hover,
 
 input.gradenow,
 input.savenow,
-input.gethint
+input.gethint,
+input.reloadnow
 {
    padding: 4px 4px 4px 27px; 
    margin-right: 5px;
