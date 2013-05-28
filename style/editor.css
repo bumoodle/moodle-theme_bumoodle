@@ -1,3 +1,19 @@
-html,body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+/**
+ * Get rid of the path row, and reduce the size of the editor's bottom bar.
+ */
+
+.mceLast {
+    height: 6px !important;
+}
+.mceStatusbar {
+    height: 6px !important;
+    overflow: hidden !important;
+}
+
+.mceStatusbar div {
+    display: none !important;
+}
+
+.mceResize {
+    margin-top: -12px !important;
 }
