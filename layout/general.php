@@ -29,6 +29,19 @@ echo $OUTPUT->doctype() ?>
     <title><?php echo $PAGE->title ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,300|Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+ 
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({
+    MMLorHTML: { prefer: "HTML" },
+    tex2jax: {
+    displayMath: [['\\[', '\\]']],
+    inlineMath: [['\\(', '\\)']],
+    processEscapes: true
+    },
+    TeX: { extensions: ['enclose.js'] }
+    });
+    </script>
+    <script type="text/javascript" src="/theme/bumoodle/javascript/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
     <?php echo $OUTPUT->standard_head_html() ?>
 </head>
 <body id="<?php echo $PAGE->bodyid ?>" class="<?php echo $PAGE->bodyclasses.' '.join(' ', $bodyclasses) ?>">

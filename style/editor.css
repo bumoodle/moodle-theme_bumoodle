@@ -17,3 +17,8 @@
 .mceResize {
     margin-top: -12px !important;
 }
+
+#tinymce blockquote {
+    border-left: 2px solid #AAA;
+    padding-left: 6px;
+}

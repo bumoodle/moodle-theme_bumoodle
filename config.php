@@ -20,7 +20,8 @@ $THEME->parents = array('base','canvas');
 // changes you want to your theme.
 ////////////////////////////////////////////////////
 
-$THEME->sheets = array('core', 'gradebook', 'behaviour', 'adminautohide', 'videomods', 'mform', 'courseformat', 'login', 'printable', 'editor');
+$THEME->sheets = array('core', 'gradebook', 'behaviour', 'adminautohide', 'videomods', 'mform', 'courseformat', 'login', 'printable', 'editor',
+    'forum', 'quiz', 'messaging');
 
 ////////////////////////////////////////////////////
 // Name of the stylesheet(s) you've including in
@@ -149,7 +150,7 @@ $THEME->layouts = array(
 // media player for the filters
 ////////////////////////////////////////////////////
 
-// $THEME->javascripts
+$THEME->javascripts = array('mathjax');
 // $THEME->javascripts = array('jquery155','test.min');
 
 ////////////////////////////////////////////////////

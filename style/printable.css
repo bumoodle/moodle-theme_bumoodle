@@ -16,10 +16,11 @@
       margin: 1mm !important;
   }
 
-  .que 
+  div.que 
   {
     border: none !important;
     box-shadow: none !important;
+    background: none !important;  
   }
 
   .que .info > div {
@@ -27,7 +28,7 @@
   }
 
   .que .content {
-    margin: 2.5em;
+    margin: 1.5em;
     page-break-inside: avoid !important;
   }
 
@@ -58,5 +59,59 @@
   .side-pre-only #page-content #region-main {
     margin-left: 0mm;
   }
+  
+  div.que .no {
+    font-size: 0pt;
+    color: #fff;
+  }
+  
+  div.que .qno {
+    font-size: 12pt;
+    color: #000;
+  }
+  
+  div.que .im-controls {
+    display: none;
+  }
+  
+  #contentwrapper {
+    width: 100% !important; 
+  }
+  
+  div.region-content,
+  div.region-main,
+  .side-pre-only #page-content #region-main-box #region-post-box #region-main-wrap #region-main {
+    padding: 0 !important; 
+  }
+    
+  #footerwrapper {
+      display: none; 
+  }
+    
+  div.submitbtns {
+    display: none; 
+    }
+    
+  input, select {
+    border:none;
+    border-bottom: 2pt solid #000;    
+    background: #fff;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  div.box.quizaccessnotices {
+    display: none; 
+  }
+  
+  div.qrcode img {
+    width: 200px;
+    height: 200px;
+  }
 
+  .filemanager {
+    display: none !important;
+  }
+    
 }
