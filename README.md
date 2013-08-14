@@ -4,7 +4,7 @@ Moodle@BU Theme for Binghamton University
 Authored by Kyle Temkin, working for Binghamton University <http://www.binghamton.edu>,
 using a variety of IP assets owned by Binghamton University
 
-*The images contained in this theme are intellectually owned by Binghamton University, and contain registered trademarks. They are _not_ released under the GPL.*
+*The images contained in this theme are intellectually owned by Binghamton University unless otherwise noted, and contain registered trademarks. They are _not_ released under the GPL.*
 
 
 Installation
@@ -18,3 +18,8 @@ To install Moodle 2.1+ using git, execute the following commands in the root of 
 Or, extract the following zip in your_moodle_root/theme/:
 
     https://github.com/ktemkin/moodle-theme_bumoodle/zipball/master
+
+
+Attribution
+===================
+pix/fullscreen.png, pix/fullscreen.svg -- P. J. Onori http://www.somerandomdude.com/

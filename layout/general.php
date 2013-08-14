@@ -59,8 +59,7 @@ echo $OUTPUT->doctype() ?>
         <?php if ($haslogo) {
                         echo html_writer::link(new moodle_url('/'), "<img src='".$PAGE->theme->settings->logo."' alt='logo' id='logo' />");
                     } else { 
-                        echo '<img src="'.$CFG->httpswwwroot.'/theme/bumoodle/pix/watson_logo.gif" id="logo">';
-                    
+                      echo '<img src="'.$OUTPUT->pix_url('watson_logo', 'theme_bumoodle').'" alt="Logo" >';
                     } ?>
         
         <?php if ($hascustommenu) { ?>
@@ -100,6 +99,7 @@ echo $OUTPUT->doctype() ?>
                                                 <div id="region-main-wrap">
                                                 <div id="region-main">
                                                         <div class="region-content">
+                                                        <div id="btn-fullscreen" class="hidden"></div>
                                                                         <div id="mainpadder">
                                                 <?php echo core_renderer::MAIN_CONTENT_TOKEN ?>
                                                 </div>

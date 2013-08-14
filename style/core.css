@@ -266,8 +266,9 @@ span.arrow.sep {
 }
 
 #mainpadder {
-        padding: 15px;
-        }
+  padding: 15px;
+  margin-top: 10px;
+}
 
 #region-main .region-content {
         border: 1px solid #ccc;

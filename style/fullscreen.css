@@ -1,0 +1,43 @@
+body.suppressed {
+  overflow: hidden;
+}
+
+.region-content {
+  -webkit-transition-property: top, bottom, left, right;
+  -moz-transition-property: top, bottom, left, right;
+  transition-property: top, bottom, left, right;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+.region-content.fullscreen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  bottom: 0;
+  overflow: auto !important;
+}
+
+#btn-fullscreen.hidden {
+  display: none;
+}
+
+#btn-fullscreen {
+  float: right;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  margin-bottom: 16px;
+  opacity: 0.3;
+  cursor: pointer;
+  background-image: url([[pix:theme_bumoodle|fullscreen]]);
+  background-size: 16px 16px;
+}
+
+.region-content.fullscreen #btn-fullscreen {
+  background-image: url([[pix:theme_bumoodle|exitfullscreen]]);
+}
+

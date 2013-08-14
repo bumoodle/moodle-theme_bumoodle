@@ -1,5 +1,14 @@
 <?php
 
+/**
+ * Sets up each Moodle page, by loading the required
+ * progressive enhancement content.
+ */ 
+function theme_bumoodle_page_init($page) {
+    $page->requires->js_init_call('M.theme_bumoodle.initialize');
+}
+
+
 function bumoodle_process_css($css, $theme) {
 
     // Set the link color
