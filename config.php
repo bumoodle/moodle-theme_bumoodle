@@ -21,7 +21,7 @@ $THEME->parents = array('base','canvas');
 ////////////////////////////////////////////////////
 
 $THEME->sheets = array('core', 'gradebook', 'behaviour', 'adminautohide', 'videomods', 'mform', 'courseformat', 'login', 'printable', 'editor',
-    'forum', 'quiz', 'messaging');
+    'forum', 'quiz', 'messaging', 'fullscreen');
 
 ////////////////////////////////////////////////////
 // Name of the stylesheet(s) you've including in
@@ -150,8 +150,7 @@ $THEME->layouts = array(
 // media player for the filters
 ////////////////////////////////////////////////////
 
-$THEME->javascripts = array('mathjax');
-// $THEME->javascripts = array('jquery155','test.min');
+$THEME->javascripts = array('theme');
 
 ////////////////////////////////////////////////////
 // An array containing the names of JavaScript files
@@ -159,7 +158,7 @@ $THEME->javascripts = array('mathjax');
 // (gets included in the head)
 ////////////////////////////////////////////////////
 
-// $THEME->javascripts_footer
+//$THEME->javascripts_footer = array('theme');
 
 ////////////////////////////////////////////////////
 // As above but will be included in the page footer.
@@ -219,4 +218,4 @@ $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 ////////////////////////////////////////////////////
 // Controls the colours for the MP3 player
 ////////////////////////////////////////////////////
-$THEME->csspostprocess = 'darkb_process_css';
+$THEME->csspostprocess = 'bumoodle_process_css';

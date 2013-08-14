@@ -1,6 +1,6 @@
 <?php
 
-function darkb_process_css($css, $theme) {
+function bumoodle_process_css($css, $theme) {
 
     // Set the link color
     if (!empty($theme->settings->linkcolor)) {
@@ -8,7 +8,7 @@ function darkb_process_css($css, $theme) {
     } else {
         $linkcolor = null;
     }
-    $css = darkb_set_linkcolor($css, $linkcolor);
+    $css = bumoodle_set_linkcolor($css, $linkcolor);
     
      // Set the main color
     if (!empty($theme->settings->maincolor)) {
@@ -16,14 +16,12 @@ function darkb_process_css($css, $theme) {
     } else {
         $maincolor = null;
     }
-    $css = darkb_set_maincolor($css, $maincolor);
+    $css = bumoodle_set_maincolor($css, $maincolor);
     
     return $css;
 }
 
-
-
-function darkb_set_linkcolor($css, $linkcolor) {
+function bumoodle_set_linkcolor($css, $linkcolor) {
     $tag = '[[setting:linkcolor]]';
     $replacement = $linkcolor;
     if (is_null($replacement)) {
@@ -33,7 +31,7 @@ function darkb_set_linkcolor($css, $linkcolor) {
     return $css;
 }
 
-function darkb_set_maincolor($css, $maincolor) {
+function bumoodle_set_maincolor($css, $maincolor) {
     $tag = '[[setting:maincolor]]';
     $replacement = $maincolor;
     if (is_null($replacement)) {

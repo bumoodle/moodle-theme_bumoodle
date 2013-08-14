@@ -1,4 +1,5 @@
 <?php
+
 $hasheading = ($PAGE->heading);
 $hasnavbar = (empty($PAGE->layout_options['nonavbar']) && $PAGE->has_navbar());
 $hasfooter = (empty($PAGE->layout_options['nofooter']));
@@ -40,7 +41,7 @@ echo $OUTPUT->doctype() ?>
     TeX: { extensions: ['enclose.js'] }
     });
     </script>
-    <script type="text/javascript" src="/theme/bumoodle/javascript/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="/theme/bumoodle/javascript/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
     <?php echo $OUTPUT->standard_head_html() ?>
 </head>
