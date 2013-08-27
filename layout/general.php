@@ -59,7 +59,7 @@ echo $OUTPUT->doctype() ?>
         <?php if ($haslogo) {
                         echo html_writer::link(new moodle_url('/'), "<img src='".$PAGE->theme->settings->logo."' alt='logo' id='logo' />");
                     } else { 
-                      echo '<img src="'.$OUTPUT->pix_url('watson_logo', 'theme_bumoodle').'" alt="Logo" >';
+                      echo '<img src="'.$OUTPUT->pix_url('watson_logo', 'theme_bumoodle').'" alt="Logo" id="logo">';
                     } ?>
         
         <?php if ($hascustommenu) { ?>
