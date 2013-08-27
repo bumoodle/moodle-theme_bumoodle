@@ -67,7 +67,6 @@ a:focus {
 
 #page
 {
-    height: 100%;
 }
 
 /**header divs **/
@@ -117,18 +116,19 @@ a:focus {
 
 /** main content wraps **/
 #contentwrapper {
-        width: 90%;
+        width: 95%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 15px;
-        padding-top: 10px;
+        padding-top: 5px;
         clear: both;
         
         min-height: 70%; 
 }       
 
 #page-content {
-        clear: both;
+  clear: both;
+  margin-bottom: 55px !important;
 }
 
 
@@ -174,15 +174,6 @@ div.jcontrolsright {
 
 div.jcontrolsright div.singlebutton, div.jcontrolsright div.forumsearch {
     margin: 5px 0px 0px;
-}
-
-/** foot wraps and inner divs **/
-#footerwrapper {
-        height: 40px;
-        /* background: [[setting:maincolor]] url([[pix:theme|shadbottom]]) repeat-x top left; */
-         background: #00694E;
-        margin-top: 15px;
-        
 }
 
 #footerinner {
@@ -261,9 +252,6 @@ span.arrow.sep {
 /*        text-shadow: 0 -1px 1px #000000; */
 }
 
-#page-content #region-main {
-        
-}
 
 #mainpadder {
   padding: 15px;
@@ -286,7 +274,7 @@ span.arrow.sep {
 .block {
     margin: 0 0 15px 0 !important;
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 0px solid #fff;
     background: #fff;
     -webkit-border-radius: 2px;
         -moz-border-radius: 2px;
@@ -307,10 +295,6 @@ span.arrow.sep {
     background: [[setting:maincolor]] url([[pix:theme|bart5]]) repeat-x;
 }
 
-.block.hidden div.header {
-    border: 1px solid #dadada;
-}
-
 .block.block_with_controls div.header div.commands {
     text-align: center;
     padding: 2px;
@@ -322,7 +306,7 @@ span.arrow.sep {
 
 .title h2 {
     padding: 0px 0px 0px 10px;
-    font-size: 14px;
+    font-size: 18px;
     text-transform: uppercase;
     margin: 0 !important;
     font-weight: 400;
@@ -1274,3 +1258,100 @@ span.unread
 div.filemanager-container {
   clear: none !important;
 }
+
+.block div.header {  
+  margin-top: -2px !important;
+  margin-left: -6px !important;
+  margin-right: -6px !important;
+  border-bottom: 2px solid #54BE46;
+}
+  
+.block .header h2 {     
+  position: relative;
+  bottom: -3px;
+  left: 6px;
+}
+    
+.block {    
+  padding: 0px;
+  border-top: none !important;
+}
+
+.block_action {
+   margin-right: 8px !important; 
+ }
+
+.block_action img,
+.block_action input[type=image]{
+   background-color: #C4C4C4;
+   opacity:0.8;
+   filter:alpha(opacity=80); /* For IE8 and earlier */
+}
+
+.block div.header {  
+  margin-top: -2px !important;
+  margin-left: -6px !important;
+  margin-right: -6px !important;
+  border-bottom: 2px solid #54BE46;
+}
+  
+.block .header h2 {     
+  position: relative;
+  bottom: -3px;
+  left: 6px;
+}
+    
+.block {    
+  padding: 0px;
+  border-top: none !important;
+}
+
+.block_action {
+   margin-right: 8px !important; 
+ }
+
+.block_action img,
+.block_action input[type=image]{
+   background-color: #C4C4C4;
+   opacity:0.8;
+   filter:alpha(opacity=80); /* For IE8 and earlier */
+   z-index: 1000;
+}
+
+#contentwrapper {
+  width: 95% !important;
+  padding-top: 5px !important;
+}
+
+.block_recent_activity.block_docked div.content h2.main, .block_recent_activity.block_docked div.content h3.main, .side-pre .block div.content h2.main, .side-post .block div.content h2.main, .block div.content h3.main, .block div.content h2 {
+ color: #006A4e;   
+}
+-pre .block div.content h2.main, .side-post .block div.content h2.main, .block div.content h3.main, .block div.content h2 {
+ color: #006A4e;   
+}
+
+#page {
+  min-height: 100%;
+}
+
+#footerwrapper {
+ position: absolute;
+ bottom: 0px;
+ width: 100%;
+ height: 40px;
+ background: #00694E;
+ margin-top: 15px;
+} 
+
+.headingblock.header {
+    font-size: 34px;
+    text-align: left;
+    margin-bottom: 7px;
+    margin-top: -13px;
+    line-height: 28px;
+    padding-left: 7px;
+}
+
+.pagelayout-report #page-content {
+  overflow-y: auto !important;
+} 
