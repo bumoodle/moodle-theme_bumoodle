@@ -125,8 +125,8 @@ class theme_bumoodle_core_renderer extends core_renderer {
         }
 
 
-
-        if (debugging('', DEBUG_DEVELOPER)) {
+        //If debugging is on, or the user is an administrator, display debugging details.
+        if (debugging('', DEBUG_DEVELOPER) || is_siteadmin()) {
             if (!empty($debuginfo)) {
                 $debuginfo = s($debuginfo); // removes all nasty JS
                 $debuginfo = str_replace("\n", '<br />', $debuginfo); // keep newlines
