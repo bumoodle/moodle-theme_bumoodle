@@ -11,16 +11,6 @@ html,body {
     margin: 0;
     padding: 0;
     background: #ffffff;
-    
-    /*
-    background-image: -moz-linear-gradient(top, 
-                                                        #fafafa, 
-                                                        #cccccc);
-        background-image: -webkit-gradient(linear,left top,left bottom,
-                color-stop(0,           #d8d6bf),
-                color-stop(1,           #ffffff));
-
-    */
     background-image: url([[pix:theme|bg-watson]]);
     background-repeat: repeat-x;
     background-position: 0px 175px;  
@@ -594,12 +584,13 @@ div.dockeditempanel_bd {
 }
 
 /** main headings **/
-
+#frontpage-course-list h2, #region-main h2,
 h2.main, h3.sectionname, h2.headingblock, h3.main, div.loginpanel h2, div.signuppanel h2 {
     border-bottom: 2px solid [[setting:maincolor]];
     display: block;
 }
 
+#frontpage-course-list h2, #region-main h2,
 h3.sectionname, h2.headingblock,h2.main,h3.main, h2.main a, h3.main a, div.loginpanel h2, div.signuppanel h2 {
     font-size: 18px;
     text-transform: uppercase;
@@ -612,9 +603,15 @@ h3.sectionname, h2.headingblock,h2.main,h3.main, h2.main a, h3.main a, div.login
 
 
     font-family: 'Oswald', sans-serif !important;
+}
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}   
 
-    }
+#region-main .mform:not(.unresponsive) .fitem .fitemtitle label {
+    font-weight: normal;
+}
 
  #page-course-info h2.main, h3.sectionname, h2.main a, h3.main a, div.loginpanel h2, div.signuppanel h2, div.hd h3.main {
     font-size: 16px;

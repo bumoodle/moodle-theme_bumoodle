@@ -13,7 +13,8 @@
 }
 
 .course-content .section li.activity {margin: 0; padding: 0.1em; }
-li.activity img.activityicon {height: 16px; width:16px; }
+.course-content .section li.activity img.activityicon {height: 16px; width:16px; }
+.course-content .section li.activity div.activityinstance { height: auto; padding-bottom: 1px; }
 
 .section.current {
     background-color: #FDF9CA;
