@@ -32,7 +32,7 @@ class theme_bumoodle_core_question_renderer extends core_question_renderer
     protected function info(question_attempt $qa, qbehaviour_renderer $behaviouroutput, qtype_renderer $qtoutput, question_display_options $options, $number) {
         $output = $this->number($number);
         $output .= $this->status($qa, $behaviouroutput, $options);
-        $output .= $this->mark_summary($qa, $options);
+        $output .= $this->mark_summary($qa, $behaviouroutput, $options);
         $output .= $this->grade_method_summary($qa, $behaviouroutput, $options);
         $output .= $this->question_flag($qa, $options->flags);
         $output .= $this->ask_instructor_link($qa, $number);
