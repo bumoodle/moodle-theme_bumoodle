@@ -605,6 +605,11 @@ h3.sectionname, h2.headingblock,h2.main,h3.main, h2.main a, h3.main a, div.login
     font-family: 'Oswald', sans-serif !important;
 }
 
+#region-main .hidden .sectionname {
+    color: #AAA;
+    border-color: #AAA;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }   
@@ -1340,7 +1345,7 @@ div.filemanager-container {
  margin-top: 15px;
 } 
 
-.headingblock.header {
+#region-main h2.headingblock.header {
     font-size: 34px;
     text-align: left;
     margin-bottom: 7px;
@@ -1352,3 +1357,13 @@ div.filemanager-container {
 .pagelayout-report #page-content {
   overflow-y: auto !important;
 } 
+
+a[title="Edit summary"] {
+    position: relative;
+    top: -10px;
+    left: -5px;
+}
+
+#region-main .content h3.sectionname {
+    margin-bottom: 4px;
+}

@@ -34,14 +34,14 @@ Tweak the top opacity values to get "ghost" icons rather than hiding them**/
     filter: alpha(opacity=1);
 }
 
-.path-course-view .section:hover .right.side img,
-.path-course-view .section:hover .left.side img,
 .path-course-view .section .right.side a:focus img,
 .path-course-view .section .left.side a:focus img,
 .path-course-view .section .right.side span:focus img,
 .path-course-view .section .left.side span:focus img,
 .ie.path-course-view .section .right.side a:active img,
 .ie.path-course-view .section .left.side a:active img,
+.path-course-view .section:hover .right.side img,
+.path-course-view .section:hover .left.side img
 {
     opacity:1;
     filter: none;
@@ -111,5 +111,4 @@ Tweak the top opacity values to get "ghost" icons rather than hiding them**/
 
 
 .path-course-view .section .content li span.editing_move img {
-    padding-left: 1em;
 }
