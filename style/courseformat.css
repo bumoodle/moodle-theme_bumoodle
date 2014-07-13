@@ -19,3 +19,8 @@
 .section.current {
     background-color: #FDF9CA;
 }
+
+.section .activity .actions {
+  margin-top: -2px;
+}
+

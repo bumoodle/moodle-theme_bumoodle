@@ -15,7 +15,8 @@ Tweak the top opacity values to get "ghost" icons rather than hiding them**/
 .path-course-view .section .content li .commands span img,
 .path-course-view .section .content li span.editing_move img,
 .path-course-view .section .content li a.editing_title img,
-.path-course-view .section .content .summary a img.icon.edit {
+.path-course-view .section .content .summary a img.icon.edit
+{
 	opacity: 0.01;	
 	filter: alpha(opacity=1);
 	-o-transition: opacity 0.3s linear 0.1s;
@@ -28,7 +29,8 @@ Tweak the top opacity values to get "ghost" icons rather than hiding them**/
 .path-course-view .section .left.side span img,
 .path-course-view .section .right.side a img,
 .path-course-view .section .right.side span img,
-.path-course-view .section .right.side div img
+.path-course-view .section .right.side div img,
+.jsenabled .moodle-actionmenu .toggle-display.textmenu
 {
     opacity: 0.01; 
     filter: alpha(opacity=1);
@@ -41,10 +43,10 @@ Tweak the top opacity values to get "ghost" icons rather than hiding them**/
 .ie.path-course-view .section .right.side a:active img,
 .ie.path-course-view .section .left.side a:active img,
 .path-course-view .section:hover .right.side img,
-.path-course-view .section:hover .left.side img
+.path-course-view .section:hover .left.side img,
 {
-    opacity:1;
-    filter: none;
+  opacity:1;
+  filter: none;
 	-o-transition: opacity 0.1s;
 	-moz-transition: opacity 0.1s;
 	-webkit-transition: opacity 0.1s;
@@ -67,6 +69,7 @@ Tweak the top opacity values to get "ghost" icons rather than hiding them**/
 .path-course-view .section .content .summary span:focus img.icon.edit,
 .path-course-view .section .content li:hover span.editing_move img,
 .path-course-view .section .content li:hover a.editing_title img,
+.jsenabled .section .content li:hover .moodle-actionmenu .toggle-display,
 .ie.path-course-view .section .content .summary a:active img.icon.edit{
 	opacity:1;
 	filter: none;
@@ -104,10 +107,12 @@ Tweak the top opacity values to get "ghost" icons rather than hiding them**/
 	transition: opacity 0.1s;
 }
 
+/*
 .toggle-display.textmenu {
     display: none !important;
     visibility: hidden;
 }
+*/
 
 
 .path-course-view .section .content li span.editing_move img {
