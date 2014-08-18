@@ -788,6 +788,10 @@ ul.unlist, ul.unlist li, ul.unlist li div, ul.unlist li div ul, ul.unlist li div
     margin: 0;
 }
 
+.unlist, .unlist li, .inline-list, .inline-list li, .block .list, .block .list li, .sitetopic .section li.activity, .course-content .section li.activity, .sitetopic .section li.movehere, .course-content .section li.movehere, .course-content .current {
+  background: inherit;
+}
+
 div.coursebox {
     padding-bottom: 7px !important;
     margin-bottom: 7px !important;
@@ -1366,4 +1370,10 @@ a[title="Edit summary"] {
 
 #region-main .content h3.sectionname {
     margin-bottom: 4px;
+}
+
+.block_navigation .block_tree .tree_item {
+  padding-left: 21px;
+  margin: 1px 0px;
+  text-align: left;
 }
