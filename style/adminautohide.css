@@ -43,7 +43,7 @@ Tweak the top opacity values to get "ghost" icons rather than hiding them**/
 .ie.path-course-view .section .right.side a:active img,
 .ie.path-course-view .section .left.side a:active img,
 .path-course-view .section:hover .right.side img,
-.path-course-view .section:hover .left.side img,
+.path-course-view .section:hover .left.side img
 {
   opacity:1;
   filter: none;
