@@ -13,10 +13,10 @@
 }
 
 
-.path-login .twocolumns div.signuppanel h2 {
+.path-login .signuppanel h2 {
     font-size: 18px;
-    text-align: left;
-    border: none;
+    text-align: left !important;
+    border-bottom: none !important;
 }
 
 .path-login .twocolumns div.loginpanel h2 {
@@ -44,6 +44,7 @@
     border: 1px solid #E5E5E5;
     border-top: 0px;
     margin-top: 0;
+    padding-bottom: 1.5em;
 }
 
 .path-login .loginbox .loginform div.form-label {
@@ -118,11 +119,19 @@ body.path-login div.loginbox div.loginform div.form-input {
 }
 
 .path-login .loginbox .loginpanel div.forgetpass a {
-    margin-top : -30px; /* FIXME */
+    margin-top : -1.2em;
 }
+
+.path-login #loginbtn {
+    margin-left: 25px;
+    float: left;
+    margin-top: -0.5em;
+}
+
+/*
 .path-login .loginbox .loginpanel div.rememberpass {
-    margin-top : -44px; /* FIXME */
-}
+    margin-top : -44px; 
+} */
 
 .path-login .loginerrors {
     margin: 5px;
